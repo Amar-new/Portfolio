@@ -1,0 +1,106 @@
+﻿header {
+    position: fixed;
+    width: 100%;
+    background-color: #c64b2d;
+    margin:0px 4px 0px -6px;
+    top:0;
+}
+
+#navbar{
+    float: right;
+}
+
+#navbar li{
+    list-style: none;
+    display: inline; 
+    
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: #d8d6d7;
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 11px;
+    margin: 0 14px 0px;
+    
+    
+}
+
+#welcome-section {
+    font-size: 24px;
+    height:100vh;
+    background:linear-gradient(0deg,gray 5px,#35c3c9 300px);
+    padding-top: 40px;
+    
+    
+}
+
+div{
+    padding-top:60px;
+    text-align: center;
+}
+
+.project-tile {
+    display:grid;
+    grid-template-areas: 
+        "pro1 pro2 pro3";
+    grid-gap: 30px 20px;
+    background-color: #2196F3;
+}
+.project-tile>div {
+   margin:15px 10px;
+  background-color: rgba(249, 248, 255, 0.8);
+  text-align: center;
+  padding:20px 10px;
+  font-size: 30px;
+    border:1px solid black;
+    border-radius: 4px;
+}
+ a{
+    text-decoration: none;
+    color:black;
+}
+
+#Contacts a {
+    border:2px solid black;
+    border-radius:55%;
+    padding:30px;
+    margin:10px;
+    font-weight:bold;
+    font-size:30px;
+   
+}
+
+#profile-link{
+    background-image: linear-gradient(0deg,green 0px,yellow 80px);
+}
+#fb{
+    font-family: 'Londrina Outline', cursive;
+    color: #51fcfc;
+    background: rgba(128, 110, 110, 0.66);
+}
+
+@media(max-width:410px){
+    #navbar{
+        float:none;
+    }
+    #navbar a{
+        display:block;
+        text-align: center;
+        padding:2px;
+        margin:-10px 5px 10px -36px;
+    }
+    div{
+        padding-top:100px;
+    }
+}
+
+@media(max-width:700px){
+    .project-tile{
+        display: flex;
+        flex-direction: column;
+    }
+}
